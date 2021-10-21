@@ -1,6 +1,7 @@
 {
   "type": "module",
   "scripts": {
+    "postinstall": "ln -sf ../../../../dist/cjs/cli.cjs node_modules/.bin/your-cli-name",
     "ts": "esmo"
   },
   "dependencies": {

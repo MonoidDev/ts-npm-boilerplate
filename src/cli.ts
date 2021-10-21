@@ -3,15 +3,15 @@ import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
 const main = () => {
-  const argv = process.argv[0] === 'your-cli-name'
+  const finalArgv = process.argv[0] === 'your-cli-name'
     ? ['node', ...process.argv]
     : process.argv;
 
-  yargs(hideBin(argv))
+  yargs(hideBin(finalArgv))
     .command(
       'command1 [config]',
       'Helper text for command1. ',
-      (_y) => {
+      (_argv) => {
         // Handle the command here
       },
     )

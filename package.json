@@ -26,10 +26,9 @@
     "test": "jest",
     "clean": "rm -rf dist",
     "ts": "esmo",
-    "build": "yarn clean && yarn tsc && yarn esbuild && yarn link-bin",
+    "build": "yarn clean && yarn tsc && yarn esbuild",
     "esbuild": "node esbuild.js",
-    "link-bin": "ln -sf ../../dist/cjs/cli.cjs node_modules/.bin/your-cli-name",
-    "prepare": "yarn lint && yarn build-all"
+    "prepare": "yarn lint && yarn build"
   },
   "devDependencies": {
     "@types/jest": "^26.0.21",
