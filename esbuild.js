@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const esbuild = require('esbuild');
-const { nodeExternalsPlugin } = require('esbuild-node-externals');
+import { build } from 'esbuild';
+import { nodeExternalsPlugin } from 'esbuild-node-externals';
 
 [
   {
@@ -17,7 +16,7 @@ const { nodeExternalsPlugin } = require('esbuild-node-externals');
       '.js': '.cjs',
     },
   },
-].map((opts) => esbuild.build({
+].map((opts) => build({
   entryPoints: [
     'src/cli.ts',
     'src/index.ts',

@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "scripts": {
+    "ts": "esmo"
+  },
+  "dependencies": {
+    "ts-npm-boilerplate": "link:../../"
+  },
+  "devDependencies": {
+    "esmo": "^0.10.1"
+  }
+}
